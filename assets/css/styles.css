@@ -61,9 +61,7 @@ header nav ul li a {
 
 .hero-img  {
     border: 3px solid #39a6;
-    background-color: var(--secondary-color);;
     padding: 20px;
-    color: var(--secondary-color);
     width: 40%;
     margin: 3.5%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -219,8 +217,7 @@ footer {
 
 
 /* SECTIONS GENERAL */
-  
-.section-title {
+  .section-title {
     font-size: 48px;
     border-bottom: 3px solid;
     color: var(--text-color);
@@ -230,10 +227,113 @@ footer {
     width: 700px;
 }
 
-/* SECTION GENERAL END */
-
 
 /* Utilitites */
 .flex-row {
     display: flex;
+}
+
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      position: relative
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+    
+    .heroQuote{
+        padding: 30px 0px 50px 0px;;
+        line-height: 1.2;
+    }
+
+    .heroQuote h3 {
+        padding-top: 20px;
+        font-size: 35px
+    }
+  
+    .section-title {
+      width: 75%;
+    }
+
+    .projects {
+        width: 75%;
+    }
+    
+    .main-project {
+        width: 100%;
+    }
+  
+    .sub-project {
+        width: 100%
+    }
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
+  
+    .hero-img  {
+        padding: 20px;
+        width: 50%;
+    }
+    
+    .heroQuote{
+        padding: 20px 0px 0px 0px;
+        font-size: 18px;
+        line-height: 1.2;
+    }
+
+    .heroQuote h3 {
+        padding-top: 20px;
+        font-size: 35px
+    }
+}
+    
+  
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  
+    section {
+        padding: 10px 15px;
+    }
+    
+    .hero-img {
+        width: 100%;
+    }
+
+    .heroQuote {
+        width: 100%;
+    }
+
+    #aboutMe {
+        padding: 0 0 50px 0;
+    }
+
 }
