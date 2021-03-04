@@ -1,3 +1,7 @@
+:root {
+    --text-color: #39a6b2;
+}
+
 /* NAVIGATION SECTION */
   
 header {
@@ -5,35 +9,37 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
+}
   
-  header h1 {
+header h1 {
+    color: var(--text-color);
     font-weight: bold;
     margin: 0;
     font-size: 36px; 
-  }
+}
   
-  header a {
+header a {
     text-decoration: none;
-  }
+}
   
-  header nav {
+header nav {
     margin: 6px 0;
-  }
+}
   
-  header nav ul {
+header nav ul {
+    color: var(--text-color);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-  }
+}
   
-  header nav ul li a {
+header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
-  }
+}
   
 /* END NAVIGATION */
 
@@ -55,7 +61,7 @@ header {
     margin: 3.5%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
-  }
+}
 
 .hero-img img {
     height: 100%;
@@ -63,16 +69,59 @@ header {
 }
 
 .heroQuote {
-    padding: 200px 0px 50px 0px;
+    padding: 150px 0px 50px 0px;
     width: 35%;
     text-align: right;
     margin: 3.5%;
-    color: #39a6b2;
-    font-size: 18px;
-    line-height: 1.2;
-  }
+    color: var(--text-color);
+    font-size: 21px;
+    line-height: 1.5;
+}
   
-  .heroQuote h3 {
+.heroQuote h3 {
     font-style: italic;
-    font-size: 55px;
-  }
+    font-size: 60px;
+}
+/* END HERO SECTION */
+
+
+/* ABOUT ME SECTION */
+#aboutMe {
+    padding: 150px;
+    color: var(--text-color);
+}
+.intro p {
+    line-height: 2;
+    color: var(--text-color);
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+}
+/* END ABOUT ME SECTION */
+
+
+/* MY PROJECTS SECTION */
+
+/* END MY PROJECTS SECTION */
+
+
+/* SECTIONS GENERAL */
+  
+.section-title {
+    font-size: 48px;
+    border-bottom: 3px solid;
+    color: var(--text-color);
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 700px;
+}
+
+/* SECTION GENERAL END */
+
+
+/* Utilitites */
+.flex-row {
+    display: flex;
+}
