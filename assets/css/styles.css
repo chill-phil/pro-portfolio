@@ -2,6 +2,12 @@
     --text-color: #39a6b2;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 /* NAVIGATION SECTION */
   
 header {
@@ -102,7 +108,50 @@ header nav ul li a {
 
 
 /* MY PROJECTS SECTION */
+.projects {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
 
+.project {
+    border: 3px solid #39a6;
+    margin: 75px 20px;
+    flex: 1;
+    color: var(--text-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.project img {
+    
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px 15px 0px 0px;
+  }
+  
+  .project-bio {
+    padding: 25px;
+    line-height: 1.3;
+    color: var(--text-color);
+  }
+  
+  .project-bio h3 {
+    font-size: 28px;
+  }
+  
+  .project-bio h4 {
+    font-weight: lighter;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .project-bio p {
+    font-size: 17px;
+  }
 /* END MY PROJECTS SECTION */
 
 
