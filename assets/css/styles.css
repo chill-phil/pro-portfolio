@@ -94,7 +94,7 @@ header nav ul li a {
 
 /* ABOUT ME SECTION */
 #aboutMe {
-    padding: 110px 0 200px 0;
+    padding: 50px 0 50px 0;
     color: var(--text-color);
 }
 .intro p {
@@ -114,12 +114,27 @@ header nav ul li a {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; 
+    justify-content: center; 
+}
+
+.main-project {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.sub-project {
+    height: auto;
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .project {
     border: 3px solid #39a6;
-    margin: 75px 20px;
+    margin: 20px;
     flex: 1;
     color: var(--text-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -147,7 +162,6 @@ header nav ul li a {
   .project-bio h4 {
     font-weight: lighter;
     font-size: 22px;
-    margin-bottom: 15px;
   }
   
   .project-bio p {
@@ -212,7 +226,7 @@ footer {
     color: var(--text-color);
     padding-bottom: 20px;
     text-align: center;
-    margin: 0 auto 35px auto;
+    margin: 50px auto 35px auto;
     width: 700px;
 }
 
