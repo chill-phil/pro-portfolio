@@ -35,3 +35,44 @@ header {
     font-size: 1.55vw;
   }
   
+/* END NAVIGATION */
+
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.hero-img  {
+    border: 3px solid #39a6;
+    background-color: var(--secondary-color);;
+    padding: 20px;
+    color: var(--secondary-color);
+    width: 40%;
+    margin: 3.5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+  }
+
+.hero-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.heroQuote {
+    padding: 200px 0px 50px 0px;
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #39a6b2;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  
+  .heroQuote h3 {
+    font-style: italic;
+    font-size: 55px;
+  }
